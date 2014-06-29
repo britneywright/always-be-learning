@@ -4,8 +4,16 @@ title:  "Hello Universe!"
 date:   2014-06-28 22:57:17
 ---
 
-And in case you were wondering where the inspiration for the blog name came from. I have the #CodeNewbies Twitter chat to thank for that. In a moment of genius I tweeted the following:
+**Goal**: Create a space to talk about my ongoing learning affair with development and technology.
 
-![A4: To prepare for our tech future, I need to ABL: always be learning! #CodeNewbie]({{ site.url }}/assets/2014/06/abl-tweet.jpg)
+**Progress**: First post
 
-And a name and new blog idea were born.
+And we're off! Check out my [About]({{site.url}}/about) page for the full run down of why I created this blog. But the short story is that I finally feel comfortable enough talking tech that I actually want to write about what I'm doing and what I'm learning. Of course there's the standard "hope someone else out there will benefit" goal, but really at it's core this space is for me. I'll be winning, losing, making mistakes, learning from my mistakes. On the good days I'll reflect on how far I've come and on the bad days I'll reflect on how far I've come. Sounds like an all upside proposition to me. 
+
+And in case you were wondering where the inspiration for the blog name came from. I have the [#CodeNewbies](https://twitter.com/search?q=%23CodeNewbies&src=typd) Twitter chat to thank for that. In a moment of genius I tweeted the following:
+
+<a href="https://twitter.com/britneywright/statuses/481974760034013184"><img src="/../assets/2014/06/abl-tweet.png" alt="Focus on the jurney, not the destination. Joy is found not in finishing an activity but in doing it."/></a>
+
+And a name and new blog idea were born. Enjoy the ride.
+
+\- B
