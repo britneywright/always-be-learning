@@ -7,24 +7,43 @@
     <atom:link href="http://alwaysbelearning.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+        <title>New Blog Configuration</title>
+        <description>&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; Setup second blog using Github Pages, Jekyll and a custom domain.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Progress:&lt;/strong&gt; Completed, one day&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I’ve set up a number of personal websites and blogs over the years, but it seems that each time I do things a little bit differently. I moved on from wordpress at the beginning of the year for the simpler pastures of &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; and &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Using my text editor to write my posts allows me to focus more on writing and less on all the other “stuff” that comes along with platforms like Wordpress. Pushing to Github is quick and easy, and also means everything you write is automatically backed up. And best of all, if you’re using a public repo it’s free. I’m slowly weaning myself off of paid hosting and finding it to be a much smoother experience.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Project Pages&lt;/strong&gt;&lt;/p&gt;
 
+&lt;p&gt;Migrating my first &lt;a href=&quot;http://www.onebrokeb.com&quot;&gt;blog&lt;/a&gt; was fairly straightforward since Github allows one User Pages site per account. I felt like it was possible to setup more than one blog, but wasn’t sure of the process. So today I spent a bit of time researching the blog setup and also if there would be any domain issues before I went out and purchased my new domain. From the GitHub documentation I determined that I needed to create my second blog as a Project Pages site. After one false start with setting up the repo properly I found and followed the initial steps outlined by &lt;a href=&quot;http://24ways.org/2013/get-started-with-github-pages/&quot;&gt;Anna Debenham&lt;/a&gt;. The unique thing about Project Page sites is that they are intended to contain project files and site files in the same repo, but in separate branches. Since I’m just plannig a standalone site I only needed the gh-pages branch in the repo. So when I got to the “Make gh-pages your default branch” part of Anna’s post I used a command line prompt provided by &lt;a href=&quot;http://feeding.cloud.geek.nz/posts/setting-default-git-branch-in-bare/&quot;&gt;François Marier&lt;/a&gt;. Then I continued through Anna’s post until just after the “jekyll new” part. She continues to go over creating individual files, but once Jekyll is installed it already includes the necessary files to get started and I wanted to finish my initial setup before customizing anything. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Custom domain&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The last part of my initial setup was the domain. I use a different domain registrar each time, with mixed results. Today I chose to go with &lt;a href=&quot;http://www.namecheap.com&quot;&gt;Namecheap&lt;/a&gt; and I was pleasantly surprised by the simple process and clean interface. They didn’t have ads all over the place, or try to upsell me on a million things. It was straightforward and a good price of only about $15 for the domain and they include Whois privacy at no extra cost. The final step was creating the CNAME file in my repo and changing the A records in Namecheap to point my new domain, alwaysbelearning.co to the blog. After everything was deployed and configured it seemed to only take a few minutes for the site to load on the domain. Victory!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Next steps&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since then I’ve updated the __config.yml file with my basic site info. I also wrote an about page and created my first inspirational graphic for the site using the nifty tool &lt;a href=&quot;http://www.canva.com&quot;&gt;Canva&lt;/a&gt;, and wrote my first posts. Hopefully over the next week I’ll find time to work on the site aesthics, but I really plan on doing on going experiments with the look of the site as I experiment with different front-end tools and techniques. But all in all, not bad for a day’s work.&lt;/p&gt;
+
+&lt;p&gt;- B&lt;/p&gt;
 </description>
-        <pubDate>Sat, 28 Jun 2014 08:57:17 -0400</pubDate>
-        <link>http://alwaysbelearning.com/jekyll/update/2014/06/28/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://alwaysbelearning.com/jekyll/update/2014/06/28/welcome-to-jekyll/</guid>
+        <pubDate>Sat, 28 Jun 2014 19:57:17 -0400</pubDate>
+        <link>http://alwaysbelearning.com/jekyll/github/2014/06/28/new-blog-configuration/</link>
+        <guid isPermaLink="true">http://alwaysbelearning.com/jekyll/github/2014/06/28/new-blog-configuration/</guid>
+      </item>
+    
+      <item>
+        <title>Hello Universe!</title>
+        <description>&lt;p&gt;And in case you were wondering where the inspiration for the blog name came from. I have the #CodeNewbies Twitter chat to thank for that. In a moment of genius I tweeted the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://alwaysbelearning.com/assets/2014/06/abl-tweet.jpg&quot; alt=&quot;A4: To prepare for our tech future, I need to ABL: always be learning! #CodeNewbie&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And a name and new blog idea were born.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 28 Jun 2014 18:57:17 -0400</pubDate>
+        <link>http://alwaysbelearning.com/2014/06/28/welcome/</link>
+        <guid isPermaLink="true">http://alwaysbelearning.com/2014/06/28/welcome/</guid>
       </item>
     
   </channel>
