@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Yeah Baby, Yean"
+title:  "Yeah Baby, Yeah"
 date:   2014-07-09 23:57:17
 categories: jekyll github
 ---
