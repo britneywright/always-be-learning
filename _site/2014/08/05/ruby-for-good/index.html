@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ruby for Good</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="The technical blog of Britney Wright. Emphasis on Ruby, Ruby on Rails and front-end development. Also other things, because I said so.">
+    <link rel="canonical" href="http://alwaysbelearning.com/2014/08/05/ruby-for-good/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+
+    <body>
+
+    <header class="site-header">
+
+  <div class="wrap">
+
+    <a class="site-title" href="/">Always Be Learning</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
+          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
+            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
+            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
+            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+          <a class="page-link" href="/about/">About</a>
+        
+          <a class="page-link" href="/feed.xml"></a>
+        
+          <a class="page-link" href="/"></a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      <div class="post">
+
+  <header class="post-header">
+    <h1>Ruby for Good</h1>
+    <p class="meta">Aug 5, 2014</p>
+  </header>
+
+  <article class="post-content">
+  <p><img style="max-width: 100%" src="/../assets/2014/08/teampathwayhomes.jpg" alt="Team Pathway Homes group photo" /></p>
+
+<p>This past weekend I attended <a href="http://www.rubyforgood.com">Ruby for Good</a> in Fairfax, VA. It also happened to be on the campus of my current employer, George Mason University. The intent of Ruby for Good was to work on projects that benefit others. It was just what I needed. A break from my usual lone wolf-ness and a chance to work in a team environment.</p>
+
+<p>It’s hard to call Ruby for Good a conference, because although it was a gathering of a large number of people and there were talks, it wasn’t talking heads the whole weekend. I also wouldn’t call it a hackathon. Yes some teams built applications, but that wasn’t the end-goal. Ruby for Good felt most like a retreat. We stayed in the dorms over the weekend and used different spaces around campus to work on our projects, listen to talks, dine and socialize. It was as much about building as it was about learning and collaborating. The term “growing your network” is pretty cliche at this point, but Ruby for Good attracted people from as far away as Chicago and Atlanta so it really was a great opportunity to get to know people outside of our local community. I also think there’s a bit of self selection that goes into attendance at an event like this, so the atmosphere over the weekend was very friendly and open. </p>
+
+<p>Since I spend most of my day working in a very quiet office with no other developers this was a great opportunity for me to code on a team. I joined a project for a local non-profit, <a href="http://www.pathwayhomes.org/">Pathway Homes</a>. Pathway Homes provides affordable housing for the mentally disabled. We built a maintenance request ticket system for them so they could keep better track of repair requests that come in from tenants and property managers. My team was very large, and in most cases that might be cause for concern with so many different viewpoints. But our team chemistry was great. We took time initially to make sure we fully understood the needs of Pathway Homes. We also mapped out the primary work flow and application architecture before dividing the work up amongst the team. </p>
+
+<p>We built the application with a Rails back-end and a Frankenstein style Rails/<a href="https://angularjs.org/">AngularJS</a> front end. Since most of us hadn’t used Angular before we didn’t have enough time to create a pure single page Angular front-end. I worked on the service requests index view and also helped with some of the styling. My contribution was small in the scheme of all the work that went into the application, but the opportunity to learn Angular for the first time with people around to answer questions was good and now I know why people are so enthusiastic about it. I didn’t have time to dive deep into the framework, but my favorite part was how easy it is to set up filtering. That’s something I always need in the Rails applications I start but then I get overwhelmed with all the different filters I need and how to set them up. With AngularJS it was so simple to set up a search box that would search through all the tickets on the index page. Just two bits of code in the index and a little more code in the Angular controller and the whole thing was working. I can’t wait to go over it more and see how I can add it to a couple of old applications I’ve started that are very data focused.    </p>
+
+<p>The only downside to the entire event was the sadness that came at the end, knowing that I have to go back to working alone. But it was really incredible to see that in less than three full days we developed a <a href="https://pathway-homes.herokuapp.com/">fully functional application</a> that Pathway Homes can start using. </p>
+
+<p>I want to talk about our working process in a little more detail. By the time we demo-ed the application on Sunday afternoon we had over 400 commits and over 40 closed issues. We used Github for the project <a href="https://github.com/alindeman/pathway-homes">repo</a> and made the brave decision to just push changes directly to master, while constantly pulling to try. Since most of us weren’t working on the same files at the same time we didn’t have a high rate of merge conflicts. There may have been an incident or two, like me deleting the application controller. But I put it back! I never program with other developers so it took me a little bit to get down the steps I needed to correctly add my changes without conflicts. We also used <a href="https://waffle.io/alindeman/pathway-homes">Waffle.io</a> which put all of our Github issues into a virtual kanban so we could quickly see what still needed to be worked on and how things were progressing. This was especially useful since we were all working on small parts and allowed us to see how the ship was moving overall and where someone could jump in if they finished something they were working on. We also used <a href="http://hipchat.com/">HipChat</a> to share links and communicate when we weren’t in the same spaces. I didn’t realize HipChat has completely changed their pricing and they now have a completely free offering. So now I’m trying to think of ways I can get it back in my life because I’ve missed it so much. </p>
+
+<p>Some stray observations:</p>
+
+<ul>
+  <li>
+    <p>I learned to cook bacon! Ruby for Good was an all-inclusive event, but in this type of environment catered food just won’t do. We divided meal responsibilities among teams and my team cooked breakfast for everyone on Saturday morning. It’s another great way to bring people together. I also learned that you can make large quantities of scrambled eggs in the oven. Except the oven we were using didn’t work very well so I’ll have to take their word for that one.<br /> </p>
+  </li>
+  <li>
+    <p>One thing I was pleasantly surprised by was the number of people there who attended or are currently attending code schools. The ones I talked to all spoke very highly of their experiences. And in a small world moment I ran into a friend I participated in Founder’s Institute with. He recently completed Dev Bootcamp and was preparing to start his first full-time programming job in D.C. on Monday.</p>
+  </li>
+  <li>
+    <p>I definitely recommend Ruby for Good to anyone in the future. This was the inaugural event and I certainly hope it continues. There was such a wide variety of projects, from documentation, to writing test suites, to full-blown applications, there was something for any skill level or interest.</p>
+  </li>
+  <li>
+    <p>Huge shout out to everyone on Team Pathway Homes! <a href="http://twitter.com/alindeman">Andy</a>, <a href="http://twitter.com/brandonlrice">Brandon</a>, <a href="https://twitter.com/bglusman">Brian</a>, <a href="https://github.com/ecbailey">Emily</a>, <a href="http://twitter.com/jmaisu">James</a>, <a href="http://twitter.com/mad_typist">Jessie</a>, <a href="https://github.com/mepps">Maggie</a>, <a href="https://github.com/melaniew">Mel</a>, and <a href="http://twitter.com/RMalecky">Ryan</a>.</p>
+  </li>
+</ul>
+
+  </article>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrap">
+
+    <div class="footer-col-1 column">
+      <ul>
+        <li>Always Be Learning</li>
+        <li><a href="mailto:britney@britneywright.com">britney@britneywright.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col-2 column">
+      <ul>
+        <li>
+          <a href="https://github.com/britneywright">
+            <span class="icon github">
+              <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#C2C2C2" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761
+                c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32
+                c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472
+                c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037
+                C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65
+                c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261
+                c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082
+                c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129
+                c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            <span class="username">britneywright</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/britneywright">
+            <span class="icon twitter">
+              <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path fill="#C2C2C2" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27
+                c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767
+                c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206
+                C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271
+                c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469
+                c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+              </svg>
+            </span>
+            <span class="username">britneywright</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-col-3 column">
+      <p class="text">The technical blog of Britney Wright. Emphasis on Ruby, Ruby on Rails and front-end development. Also other things, because I said so.</p>
+    </div>
+
+  </div>
+
+</footer>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52875103-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>

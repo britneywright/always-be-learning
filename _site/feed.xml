@@ -7,6 +7,44 @@
     <atom:link href="http://alwaysbelearning.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Ruby for Good</title>
+        <description>&lt;p&gt;&lt;img style=&quot;max-width: 100%&quot; src=&quot;/../assets/2014/08/teampathwayhomes.jpg&quot; alt=&quot;Team Pathway Homes group photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This past weekend I attended &lt;a href=&quot;http://www.rubyforgood.com&quot;&gt;Ruby for Good&lt;/a&gt; in Fairfax, VA. It also happened to be on the campus of my current employer, George Mason University. The intent of Ruby for Good was to work on projects that benefit others. It was just what I needed. A break from my usual lone wolf-ness and a chance to work in a team environment.&lt;/p&gt;
+
+&lt;p&gt;It’s hard to call Ruby for Good a conference, because although it was a gathering of a large number of people and there were talks, it wasn’t talking heads the whole weekend. I also wouldn’t call it a hackathon. Yes some teams built applications, but that wasn’t the end-goal. Ruby for Good felt most like a retreat. We stayed in the dorms over the weekend and used different spaces around campus to work on our projects, listen to talks, dine and socialize. It was as much about building as it was about learning and collaborating. The term “growing your network” is pretty cliche at this point, but Ruby for Good attracted people from as far away as Chicago and Atlanta so it really was a great opportunity to get to know people outside of our local community. I also think there’s a bit of self selection that goes into attendance at an event like this, so the atmosphere over the weekend was very friendly and open. &lt;/p&gt;
+
+&lt;p&gt;Since I spend most of my day working in a very quiet office with no other developers this was a great opportunity for me to code on a team. I joined a project for a local non-profit, &lt;a href=&quot;http://www.pathwayhomes.org/&quot;&gt;Pathway Homes&lt;/a&gt;. Pathway Homes provides affordable housing for the mentally disabled. We built a maintenance request ticket system for them so they could keep better track of repair requests that come in from tenants and property managers. My team was very large, and in most cases that might be cause for concern with so many different viewpoints. But our team chemistry was great. We took time initially to make sure we fully understood the needs of Pathway Homes. We also mapped out the primary work flow and application architecture before dividing the work up amongst the team. &lt;/p&gt;
+
+&lt;p&gt;We built the application with a Rails back-end and a Frankenstein style Rails/&lt;a href=&quot;https://angularjs.org/&quot;&gt;AngularJS&lt;/a&gt; front end. Since most of us hadn’t used Angular before we didn’t have enough time to create a pure single page Angular front-end. I worked on the service requests index view and also helped with some of the styling. My contribution was small in the scheme of all the work that went into the application, but the opportunity to learn Angular for the first time with people around to answer questions was good and now I know why people are so enthusiastic about it. I didn’t have time to dive deep into the framework, but my favorite part was how easy it is to set up filtering. That’s something I always need in the Rails applications I start but then I get overwhelmed with all the different filters I need and how to set them up. With AngularJS it was so simple to set up a search box that would search through all the tickets on the index page. Just two bits of code in the index and a little more code in the Angular controller and the whole thing was working. I can’t wait to go over it more and see how I can add it to a couple of old applications I’ve started that are very data focused.    &lt;/p&gt;
+
+&lt;p&gt;The only downside to the entire event was the sadness that came at the end, knowing that I have to go back to working alone. But it was really incredible to see that in less than three full days we developed a &lt;a href=&quot;https://pathway-homes.herokuapp.com/&quot;&gt;fully functional application&lt;/a&gt; that Pathway Homes can start using. &lt;/p&gt;
+
+&lt;p&gt;I want to talk about our working process in a little more detail. By the time we demo-ed the application on Sunday afternoon we had over 400 commits and over 40 closed issues. We used Github for the project &lt;a href=&quot;https://github.com/alindeman/pathway-homes&quot;&gt;repo&lt;/a&gt; and made the brave decision to just push changes directly to master, while constantly pulling to try. Since most of us weren’t working on the same files at the same time we didn’t have a high rate of merge conflicts. There may have been an incident or two, like me deleting the application controller. But I put it back! I never program with other developers so it took me a little bit to get down the steps I needed to correctly add my changes without conflicts. We also used &lt;a href=&quot;https://waffle.io/alindeman/pathway-homes&quot;&gt;Waffle.io&lt;/a&gt; which put all of our Github issues into a virtual kanban so we could quickly see what still needed to be worked on and how things were progressing. This was especially useful since we were all working on small parts and allowed us to see how the ship was moving overall and where someone could jump in if they finished something they were working on. We also used &lt;a href=&quot;http://hipchat.com/&quot;&gt;HipChat&lt;/a&gt; to share links and communicate when we weren’t in the same spaces. I didn’t realize HipChat has completely changed their pricing and they now have a completely free offering. So now I’m trying to think of ways I can get it back in my life because I’ve missed it so much. &lt;/p&gt;
+
+&lt;p&gt;Some stray observations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I learned to cook bacon! Ruby for Good was an all-inclusive event, but in this type of environment catered food just won’t do. We divided meal responsibilities among teams and my team cooked breakfast for everyone on Saturday morning. It’s another great way to bring people together. I also learned that you can make large quantities of scrambled eggs in the oven. Except the oven we were using didn’t work very well so I’ll have to take their word for that one.&lt;br /&gt; &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;One thing I was pleasantly surprised by was the number of people there who attended or are currently attending code schools. The ones I talked to all spoke very highly of their experiences. And in a small world moment I ran into a friend I participated in Founder’s Institute with. He recently completed Dev Bootcamp and was preparing to start his first full-time programming job in D.C. on Monday.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I definitely recommend Ruby for Good to anyone in the future. This was the inaugural event and I certainly hope it continues. There was such a wide variety of projects, from documentation, to writing test suites, to full-blown applications, there was something for any skill level or interest.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Huge shout out to everyone on Team Pathway Homes! &lt;a href=&quot;http://twitter.com/alindeman&quot;&gt;Andy&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/brandonlrice&quot;&gt;Brandon&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/bglusman&quot;&gt;Brian&lt;/a&gt;, &lt;a href=&quot;https://github.com/ecbailey&quot;&gt;Emily&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/jmaisu&quot;&gt;James&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/mad_typist&quot;&gt;Jessie&lt;/a&gt;, &lt;a href=&quot;https://github.com/mepps&quot;&gt;Maggie&lt;/a&gt;, &lt;a href=&quot;https://github.com/melaniew&quot;&gt;Mel&lt;/a&gt;, and &lt;a href=&quot;http://twitter.com/RMalecky&quot;&gt;Ryan&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 05 Aug 2014 00:00:00 -0400</pubDate>
+        <link>http://alwaysbelearning.com/2014/08/05/ruby-for-good/</link>
+        <guid isPermaLink="true">http://alwaysbelearning.com/2014/08/05/ruby-for-good/</guid>
+      </item>
+    
+      <item>
         <title>Repeat Yourself</title>
         <description>&lt;p&gt;The best way I’ve found to retain knowledge and truly learn is by repeating myself. I engrain practices in my head through repition and see parts in a new light each time. More often than not I don’t revisit projects or exercises though and want to make a better habit of that. &lt;/p&gt;
 
