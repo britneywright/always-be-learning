@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "TWIL"
+date:   2014-10-04
+---
+
+I've been bouncing all around for quite some time and I'm ready to accept that as my way of life. For the last three months I've been working on my Rails Girls Summer of Code project, so my time for other learnings was somewhat limited. That didn't stop me from trying, but not finishing, many other things over that time though. The program officially ended at the end of September. The work will still continue to some extent but we were able to reach our initial goal just in time. Once we released our gem (Pause for a moment to "OMG I released a gem!") I decided to focus my bouncing to learn at least one thing per day.
+
+October 1st - Flexbox
+
+I first learned about flexbox while listening to the [Shop Talk Show](http://shoptalkshow.com/) podcast. The CSS3 Flexbox layout model allows you to arrange content without the need for a grid framework. No need for floats, inline-blocks, or additional stylesheets. Chris Coiyer, one of the hosts of Shop Talk Show, also runs a website I love, [CSS Tricks](http://css-tricks.com/) and he published a great [guide](http://css-tricks.com/snippets/css/a-guide-to-flexbox/) on flexbox. I read that a few months ago but went over it again. I used it in tandem with a video series on tutsplus called [CSS: Flexbox Essentials](https://webdesign.tutsplus.com/courses/css-flexbox-essentials). It was nice to go back and forth between watching someone actually write html and css and reading all the additional options each attribute has. Both resources together definitely made me feel more solid about working with the flexbox attributs and I was able to apply them to my gem demo's [home page](https://browserspree.herokuapp.com/). Once I got going I found it much easier to implement than trying to add something like Bootstrap and figuring out the floats and alignments for graphics and text.
+
+October 2nd - Parallax
+
+I may need to implement some degree of parallax scrolling to a site at work and although I think it's cool, I've never realy looked into how it works. I'm a little skeptical about the appropriateness of parallax in most cases, but it was fun to play around with. Once again tutsplus came through with a great video course, [Parallax Scrolling for Web Design](https://webdesign.tutsplus.com/courses/parallax-scrolling-for-web-design). I now know it's actually pretty easy to make a site with simple parallax scrolling. It just requires setting up the divs correctly in the html and then manipulating the scrolling speeds of each of those divs with a little jquery. Here's the [demo](../projects/parallax_100214/index.html
+) I put together during the course.
+
+Octboer 3rd - 
+
+October 4th - 
