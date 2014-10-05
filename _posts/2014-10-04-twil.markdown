@@ -12,7 +12,7 @@ I first learned about flexbox while listening to the [Shop Talk Show](http://sho
 
 **October 2nd - Parallax**
 
-I may need to implement some degree of parallax scrolling to a site at work and although I think it's cool, I've never really looked into how it works. I'm a little skeptical about the appropriateness of parallax in most cases, but it was fun to play around with. Once again tutsplus came through with a great video course, [Parallax Scrolling for Web Design](https://webdesign.tutsplus.com/courses/parallax-scrolling-for-web-design). I now know it's actually pretty easy to make a site with simple parallax scrolling. It just requires setting up the divs correctly in the html and then manipulating the scrolling speeds of each of those divs with a little jquery. Here's the [demo](../projects/parallax_100214/index.html
+I may need to implement some degree of parallax scrolling to a site at work and although I think it's cool, I've never really looked into how it works. I'm a little skeptical about the appropriateness of parallax in most cases, but it was fun to play around with. Once again tutsplus came through with a great video course, [Parallax Scrolling for Web Design](https://webdesign.tutsplus.com/courses/parallax-scrolling-for-web-design). I now know it's actually pretty easy to make a site with simple parallax scrolling. It just requires setting up the divs correctly in the html and then manipulating the scrolling speeds of each of those divs with a little jquery. Here's the [demo](../../../../projects/parallax_100214/index.html
 ) I put together during the course.
 
 **October 3rd - Project Oriented Design in Ruby**
