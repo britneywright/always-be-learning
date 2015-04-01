@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby for Good"
-date:   2015-03-31
+date:   2014-08-05
 ---
 
 <img style="max-width: 100%" src="/../assets/2014/08/teampathwayhomes.jpg" alt="Team Pathway Homes group photo"/>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Scraping and Seeding"
-date:   2014-10-04
+date:   2015-03-31
 ---
 
 This weekend I took part in a hackathon of one. A few cities had baseball themed hackathons, but since they weren't in my area I decided to work on a project on my own. The result: [Can I get a Bobblehead Today?](canigetabobbleheadtoday.com). It's a pretty straightforward rails app. When a user visits the site they are told whether or not there any Major League Baseball teams are giving away bobbleheads on that particular day. If they are the site lists which games and what the bobblehead promotion is. I've been in a rut lately so it felt really good to start and finish a project. There's definitely room for improvement and more I could do with it, but I reminded myself to stay in the hackathon mindset and make something that I could finish and others could use as soon as possible.
